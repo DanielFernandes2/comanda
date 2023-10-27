@@ -44,7 +44,7 @@ export const styles = StyleSheet.create({
     },
     imagem: {
         width: '100%',
-        height: 200,
+        height: 300,
         position: 'absolute',
         top: 0,
     },
@@ -122,6 +122,9 @@ export const styles = StyleSheet.create({
     },
     scroll: {
         width: '100%',
+    },
+    erro:{
+        color: 'red'
     }
 
 });

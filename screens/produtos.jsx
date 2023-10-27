@@ -1,4 +1,3 @@
-useState
 import { MaterialIcons } from '@expo/vector-icons';
 import { ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
@@ -7,19 +6,21 @@ import CardProduto from '../components/card.js';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-export default function Produtos() {
+export default function Produtos({navigation}) {
     const [produtos, setProdutos] = useState([])
 
     useEffect( () => {
         axios.get("http://localhost:3000/produtos")
-            .then(resp => setProdutos(resp.data))
+          .then(resp => setProdutos(resp.data))
     }, [] )
 
 
     return (
         <View style={styles.containerBetween}>
             <View style={styles.header}>
-                <MaterialIcons name="arrow-back" size={24} color="black" />
+                <TouchableOpacity>
+                    <MaterialIcons name="arrow-back" size={24} color="black" onPress={() => navigation.navigate('Comanda') } />
+                </TouchableOpacity>
 
                 <View style={styles.box}>
                     <Text>comanda</Text>
@@ -49,6 +50,7 @@ export default function Produtos() {
 
             <ScrollView style={styles.scroll}>
                 {produtos.map(p => <CardProduto key={p.id} produto={p}/> )}
+               
             </ScrollView>
 
 

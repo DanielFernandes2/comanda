@@ -1,35 +1,48 @@
 {
-    "produtos":
-    [
+    "produtos": [
         {
-          "id": "1",
-          "nome": "Cheeseburger",
-          "imagePath": "https://example.com/cheeseburger.jpg",
-          "preco": 9.99
+            "id": "1",
+            "nome": "Big Mac",
+            "imagePath": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXCTbnv/200/200/original?country=br",
+            "preco": 26.90
         },
         {
-          "id": "2",
-          "nome": "Hamburger",
-          "imagePath": "https://example.com/hamburger.jpg",
-          "preco": 8.99
+            "id": "2",
+            "nome": "Cheddar McMelt",
+            "imagePath": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXv7hw4/200/200/original?country=br",
+            "preco": 27.90
         },
         {
-          "id": "3",
-          "nome": "Bacon Burger",
-          "imagePath": "https://example.com/baconburger.jpg",
-          "preco": 10.99
+            "id": "3",
+            "nome": "Big Tasty",
+            "imagePath": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kJX39JjK/200/200/original?country=br",
+            "preco": 40.90
         },
         {
-          "id": "4",
-          "nome": "Mushroom Swiss Burger",
-          "imagePath": "https://example.com/mushroomswissburger.jpg",
-          "preco": 11.99
+            "id": "4",
+            "nome": "McChicken",
+            "imagePath": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kKXGzDAK/200/100/original?country=br",
+            "preco": 24.90
         },
         {
-          "id": "5",
-          "nome": "BBQ Burger",
-          "imagePath": "https://example.com/bbqburger.jpg",
-          "preco": 12.99
+            "id": "5",
+            "nome": "Quarterão com Queijo",
+            "imagePath": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXNUCF7/200/200/original?country=br",
+            "preco": 27.90
         }
-      ]
+    ],
+    "usuarios": [
+        {
+            "id": "1",
+            "nome": "Daniel Fernandes",
+            "email": "danicfernandes8@gmail.com",
+            "senha": "1234"
+        },
+        {
+            "id": "2",
+            "nome": "Jonathan Silva",
+            "email": "jonathan@gmail.com",
+            "senha": "4321"
+        }
+    ]
 }
